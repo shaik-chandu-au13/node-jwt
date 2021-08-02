@@ -34,11 +34,6 @@ app.get('/',(req,res)=>{
 });
 
 
-/**
- * Router Middleware
- * Router - /api/user/*
- * Method - *
- */
 app.use('/api/user', userRoutes);
 app.use('/api/user/todo', todoRoutes);
 

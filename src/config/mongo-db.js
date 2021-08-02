@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
-
-// replace here your live mongodb url
-// const MONGOURI = 'mongodb://localhost:27017/cv_raman';
+// mongo DB atlass URL
 const MONGOURI = 'mongodb+srv://admin:admin@cluster0.ko9v1.mongodb.net/nodeJwt?retryWrites=true&w=majority'
 
+
+// database connection
 const InitMongo = async () => {
     try {
         await mongoose.connect(MONGOURI,{
